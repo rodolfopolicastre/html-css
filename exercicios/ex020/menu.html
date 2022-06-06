@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        div > ul {
+            display: none;
+        }
+
+        div:hover > ul{
+            display: block;
+            background-color: blue;
+            color: white;
+            width: 120px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu {
+            font-style: italic ;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de menu</h1>
+
+    <div>
+        <p class="menu"><img src="menu-button.svg" alt="Menu">  Menu
+            <ul type="none" >
+                <li><a href="pseudoclasse.html"> - Pseudo Classe</a></li>
+                <li><a href="houver.html">- Houver</a></li>
+                <li>- Menu 03</li>
+            </ul>
+    
+        </p>
+        
+    </div>
+  
+    
+</body>
+</html>
