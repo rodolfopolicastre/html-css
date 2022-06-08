@@ -11,8 +11,8 @@
               
         }
 
-        div#q0 {
-           
+        #container {
+            position: relative;
             display: inline-block;
             height: 800px;
             width: 800px;
@@ -20,6 +20,7 @@
         }
         
         div.bloco {
+            position: absolute;
             display: inline-block;
             height: 200px;
             width: 200px;
@@ -30,32 +31,60 @@
         div#q1 {
           background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
           background-repeat: no-repeat;
-          background-position: left top;     
+          background-position: center;
+          left: 50%;
+          top: 50%;
+
+          transform: translate(-50%, -50%);
         }
 
         div#q2 {    
             background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
             background-repeat: no-repeat;
-            background-position: right top;
+            background-position: center;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-198%, -197%);
         }
 
         div#q3 {
             background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center;
+            right: 50%;
+            top: 50%;
+
+            transform: translate(198%, -197%);
+           
         }
 
         div#q4 {
             background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
             background-repeat: no-repeat;
-            background-position: right bottom;
+            background-position: center;
+            left: 50%;
+            bottom: 50%;
+
+            transform: translate(-198%, 197%);
+            
+        }
+
+        div#q5 {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            right: 50%;
+            bottom: 50%;
+
+            transform: translate(198%, 197%);
             
         }
 
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q0">
+    <div id="container">
         <div class="bloco" id="q1">
         
         </div>
@@ -64,7 +93,9 @@
         <div class="bloco" id="q3">
         </div>
         <div class="bloco" id="q4">
-    </div>
+         </div>
+        <div class="bloco" id="q5">
+        </div>
 
 </body>
 </html>
